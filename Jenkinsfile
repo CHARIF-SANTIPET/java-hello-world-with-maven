@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker run -i --rm --name my-maven-project --network jenkins-sonar-network -v "%cd%:/usr/src/mymaven" -w /usr/src/mymaven maven:3.9.9 mvn clean install'
+                sh 'docker run -i --rm --name my-maven-project --network jenkins-sonar-network -v "E:\Y4-1\AjKrit\sanor2\java-hello-world-with-maven:/usr/src/mymaven" -w /usr/src/mymaven maven:3.9.9 mvn clean install'
             }
         }
     }
